@@ -5,7 +5,7 @@ import Stripe from 'stripe'
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 //config variable
-const fronted_url = "http://localhost:5174";
+const fronted_url = "https://food-del-frontend-tavs.onrender.com";
 const currency = "inr";
 const deliveryCharge = 150;
 
