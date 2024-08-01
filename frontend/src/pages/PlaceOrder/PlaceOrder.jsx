@@ -72,6 +72,7 @@ const PlaceOrder = () => {
   return (
  
     <form onSubmit={placeOrder} className='palce-order'>
+      
       <div className='place-order-left'>
         <p className="title">Delivary Information</p>
         <div className="multi-fields">
@@ -90,6 +91,7 @@ const PlaceOrder = () => {
         </div>
         <input required name='phone' onChange={onChangeHandler} value={data.phone} type="text" placeholder='Phone' />
       </div>
+
       <div className='place-order-right'>
       <div className="cart-total">
           <h2>Cart Total</h2>

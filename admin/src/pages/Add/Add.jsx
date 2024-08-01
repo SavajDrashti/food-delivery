@@ -9,9 +9,6 @@ import { toast} from 'react-toastify'
 const Add = ({url}) => {
 
 
-
-    
-
     const [image, setImage] = useState(false)
     const [data, setData] = useState({
         name: "",
@@ -37,7 +34,7 @@ const Add = ({url}) => {
         formData.append("category", data.category)
         formData.append("image", image)
         try {
-            const response = await axios.post(`${url}/api/food/add`, formData);
+            const response = await axios.post(`${url}/api/food/add`, formData);  // all the fiiled data will be added in db and image will be strored in backend folder
 
             if (response.data.success) {
                 setData({

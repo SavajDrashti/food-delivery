@@ -79,7 +79,7 @@ const StoreContextProvider = (props) => {
         getTotalCartAmount,
         url,
         token,setToken
-    }
+    } 
     return(
         <StoreContext.Provider value={contextValue}>
             {
